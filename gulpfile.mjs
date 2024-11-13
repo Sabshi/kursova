@@ -17,6 +17,7 @@ import del from "del";
 import browserSync, { stream } from 'browser-sync';
 import rigger from "gulp-rigger";
 import notify from "gulp-notify";
+import gifsicle from 'imagemin-gifsicle';
 
 
 const sassCompiler = gulpSass(sass); 
