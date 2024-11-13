@@ -1,3 +1,41 @@
-body{
-    background-color: aqua;
+.menu {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #415167;
+    color: #EDF0F5;
+
+    li {
+        margin: 25px auto;
+    }
+}
+header{
+    display: flex;
+    justify-content: center;
+
+}
+.logo img{
+    margin-top: 72px;
+    margin-left: 35px;
+    margin-right: 150px;
+
+}
+.header-link{
+    justify-content: center;
+    display: flex;
+}
+.services-text{
+    position: absolute;
+    left: 19.8%;
+    top:52%;
+    bottom: 64px;
+    font-weight: 900;
+    font-size: 54px;
+    width: 470px;
+    margin: 0;
+    line-height: 70px;
+}
+span{
+    background-color: #C7A17A;
+    padding: 0 8px;
 }
