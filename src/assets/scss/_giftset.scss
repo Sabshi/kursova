@@ -1,0 +1,147 @@
+@use "variables" as *;
+    .giftset-title{
+        text-align: center;
+        color:$primary-color;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: $font-family-secondary;
+        margin-bottom: 9px;
+    }      
+    h1{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 34px;
+        font-family: $font-family-title;
+    }
+}
+.gift-section{
+    position: relative; /* Для позиционирования псевдоэлемента */
+    padding: 120px 0 ;
+}
+.gift-section::before{
+    content: ''; /* Обязательное свойство для отображения псевдоэлемента */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1076px; 
+    height: 800px; 
+    z-index: -1; 
+    background-color: $light-color;
+}
+.giftset {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 460px;
+    border-radius: 8px;
+    margin: 66px auto;
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 16px;
+        font-family: $font-family-secondary;
+    }      
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        font-family: $font-family-secondary;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    span{
+        font-family: $font-family-secondary;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color:$primary-color;
+    }
+}
+.giftset img {
+    width: 300px;
+    height: auto;
+    z-index: 1; 
+}
+
+.giftset-text {
+    width: 800px;
+    height: 460px;
+    background-color: #fff;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    font-size: 24px;
+    color: #d3a378;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.giftset-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    p{
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}
+.buttons {
+    display: flex;
+    gap: 63px;
+    .buy-button{
+        width: 166px;
+    }
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #d3a378;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  
+}
+
+.details-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-color;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $primary-color;
+    transition: background-color 0.3s;
+        button{
+            width: 88px;
+            height: 154px;
+            border: none;
+}
+}

@@ -1,23 +1,48 @@
+@use "variables" as *;
 .menu {
     width: 300px;
     display: flex;
     align-items: center;
     background-color: #415167;
-    color: #EDF0F5;
-
+    color:$light-color;
+    ul{
+        margin: auto auto;
+    }
     li {
         margin: 25px auto;
+
     }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        font-family:$font-family-secondary ;
+        letter-spacing: 0.03em;
+    }
+    h3{
+        font-family: $font-family-secondary;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21.82px;
+        letter-spacing: 0.06em;
+    }
+  
 }
 header{
     display: flex;
     justify-content: center;
+    span{
+        background-color: #C7A17A;
+        padding: 0 8px;
+        color: #EDF0F5;
+    }
+
 
 }
 .logo img{
     margin-top: 72px;
-    margin-left: 35px;
-    margin-right: 150px;
+    margin-right: 130px;
+    margin-left: 200px;
 
 }
 .header-link{
@@ -26,16 +51,18 @@ header{
 }
 .services-text{
     position: absolute;
-    left: 19.8%;
+    left: 14.3%;
     top:52%;
-    bottom: 64px;
     font-weight: 900;
     font-size: 54px;
+    letter-spacing: 0.03em;
+    font-family: $font-family-title;
+    color: $primary-color;
     width: 470px;
     margin: 0;
     line-height: 70px;
 }
-span{
-    background-color: #C7A17A;
-    padding: 0 8px;
+
+.services-background{
+    width: 1000px;
 }

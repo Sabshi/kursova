@@ -1,0 +1,87 @@
+@use "variables" as *;
+.combo-title{
+    text-align: center;
+    margin-bottom: 64px;
+    color: $primary-color;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: $font-family-secondary;
+        margin-bottom: 9px;
+    }      
+    h1{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 34px;
+        font-family: $font-family-title;
+    }
+}
+.combo-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    img{
+        width: 349px;
+        height: 300px;
+        background-color: #EDF0F5;
+    }
+    .combo-text{
+        padding: 0px 42px;
+        h2{
+            font-family: $font-family-secondary;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $text-color;
+        }
+        p{
+            font-family: $font-family-secondary;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+        li{
+            display: block;
+            width: 360px;  
+        }
+        .price-combo{
+            display: flex; 
+            margin-top: 42px;
+            p{
+                margin-right: 15px;
+                font-family: $font-family-secondary;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color:$accent-color;
+            }
+            p:last-child{
+                margin-right: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color:$primary-color;
+                text-decoration: line-through;
+            }
+        }
+}
+.button-combo{
+    margin-top: 20px;
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    button{
+        margin-right: 54px;
+    }
+    button:last-child{
+        margin-right:0 ;
+    }
+    .buy-button{
+        width: 134px;
+    }
+}

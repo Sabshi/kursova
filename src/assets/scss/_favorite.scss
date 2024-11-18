@@ -1,0 +1,110 @@
+@use "variables" as *;
+
+.favorite-slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 30px;
+    min-width: 0;
+
+    li {
+        display: flex;               
+        align-items: center;          
+        width: 560px;
+        height: 256px;
+        border: 1px solid #ccc;      
+    }
+
+    img {
+        max-width: 235px;
+        max-height: 256px;
+        margin-right: 20px; 
+        background-color: #EDF0F5;         
+    }
+
+    .favorite-text {
+        display: flex;
+        flex-direction: column;  
+        width: 240px;   
+        margin-left: 20px;
+        .favorite-price{
+            font-family: $font-family-secondary;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color:$accent-color;
+        }
+        h3{
+            font-family: $font-family-secondary;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $text-color;
+        }
+        p{
+            font-family: $font-family-secondary;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .button-favorite{
+        align-items: center;
+        padding: 0;
+        margin-top: 25px;
+        font-family: $font-family-secondary;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        width: 240px;
+        button{
+            margin-right: 18px;
+        button:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+    
+}
+.favorite-title{
+    text-align: center;
+    margin-bottom: 72px;
+    color: $primary-color;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: $font-family-secondary;
+        margin-bottom: 9px;
+    }      
+    h1{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 34px;
+        font-family: $font-family-title;
+    }
+}
+.favorite-section {
+    display: flex; /* Flexbox для разделения фона и контента */
+}
+
+.wrapper {
+    display: grid; /* Grid layout для упрощения структуры */
+    grid-template-columns: 400px 1fr; /* Левая колонка — синий фон, правая — контент */
+    width: 100%;
+    
+}
+
+.background-left {
+    background-color: $primary-color; /* Синий цвет */
+    height: 1031px; /* Высота 100% окна браузера */
+}
+.content {
+    padding: 40px;
+    background-color: #ffffff; /* Белый фон */
+}
+
+.slider-container .swiper-button-prev::after,
+.slider-container .swiper-button-next::after{
+    color: #ccc;
+    font-size: 80px;
+}

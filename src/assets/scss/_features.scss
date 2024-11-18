@@ -1,0 +1,58 @@
+@use "variables" as *;
+.feauters {
+    display: flex;              // Добавляем display: flex
+    flex-direction: column;     // Размещаем элементы вертикально
+    align-items: center;        // Центрируем контент
+    width: 100%;
+    height: auto;
+    margin-top: 87px;
+    margin-bottom: 125px;
+}
+
+.title-text {
+    text-align: center;
+    color:$primary-color;
+    margin-bottom: 72px; 
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: $font-family-secondary;
+        margin-bottom: 9px;
+    }      
+    h1{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 34px;
+        font-family: $font-family-title;
+    }
+}
+
+.feauters-bloks {
+    display: flex;
+    justify-content: center;    // Центрируем блоки по горизонтали
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    gap: 68px;                  // Расстояние между блоками
+
+    li {
+        width: 226px;
+        display: inline-block;
+        position: relative;
+    }
+    p{
+        font-family: $font-family-secondary;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    h2{
+        font-family: $font-family-secondary;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+
