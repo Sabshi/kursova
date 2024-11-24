@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="assets/css/style.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Revo</title>
 </head>
 <body>
@@ -56,85 +59,104 @@
             <p>Choose Your Favorite</p>
             <h1>CHUẨN GU ĐÚNG VỊ</h1>
             </div>
-          
-            <div class="slider-container">
-            <div class="favorite-slider">
-                    <li >
-                        <img src="assets/images/favorite1.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">99.00</p>
-                        <h3>REVO Morning</h3>
-                        <p>đắng, hậu ngọt, hương hoa </p>
-                        <ul class="button-favorite">
-                        <button type="button" class="buy-button">MUA NGAY</button>
-                        <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                    </div>
-                    </li>
-                    <li >
-                        <img src="assets/images/favorite2.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">139.00</p>
-                        <h3>REVO Origin</h3>
-                        <p>hậu ngọt, ít đắng, vị chua dâu </p>
-                        <ul class="button-favorite">
-                            <button type="button" class="buy-button">MUA NGAY</button>
-                        <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                        </div>
-                    </li>
-                    <li >
-                        <img src="assets/images/favorite3.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">85.00</p>
-                        <h3>REVO Everyday</h3>
-                        <p>cân bằng, hậu đắng, vị chocolate</p>
-                        <ul class="button-favorite">
-                            <button type="button" class="buy-button">MUA NGAY</button>
-                            <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                        </div>
-                    </li>
-                    <li >
-                        <img src="assets/images/favorite4.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">75.00</p>
-                        <h3>REVO Đậm Đà</h3>
-                        <p>đậm đà, đắng, truyền thống</p>
-                        <ul class="button-favorite">
-                            <button type="button" class="buy-button">MUA NGAY</button>
-                            <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                        </div>
-                    </li>
-                    <li >
-                        <img src="assets/images/favorite5.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">195.00</p>
-                        <h3>REVO Honey</h3>
-                        <p>độ ngọt cao, hậu ngọt, chua họ táo</p>
-                        <ul class="button-favorite">
-                            <button type="button" class="buy-button">MUA NGAY</button>
-                            <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                        </div>
-                    </li>
-                    <li >
-                        <img src="assets/images/favorite6.png">
-                        <div class="favorite-text">
-                        <p class="favorite-price">169.00</p>
-                        <h3>REVO Natural</h3>
-                        <p>hậu ngọt, hương hoa, vị chua dâu</p>
-                        <ul class="button-favorite">
-                            <button type="button" class="buy-button">MUA NGAY</button>
-                            <button type="button" class="details-button">CHI TIẾT</button>
-                        </ul>
-                        </div>
-                    </li>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    </div>
+         
+            <div class="favorite-slider splide" role="group">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite1.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">99.00</p>
+                                <h3>REVO Morning</h3>
+                                <p>đắng, hậu ngọt, hương hoa </p>
+                                <ul class="button-favorite">
+                                <button type="button" class="buy-button">MUA NGAY</button>
+                                <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite2.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">139.00</p>
+                                <h3>REVO Origin</h3>
+                                <p>hậu ngọt, ít đắng, vị chua dâu </p>
+                                <ul class="button-favorite">
+                                    <button type="button" class="buy-button">MUA NGAY</button>
+                                <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite3.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">85.00</p>
+                                <h3>REVO Everyday</h3>
+                                <p>cân bằng, hậu đắng, vị chocolate</p>
+                                <ul class="button-favorite">
+                                    <button type="button" class="buy-button">MUA NGAY</button>
+                                    <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite4.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">75.00</p>
+                                <h3>REVO Đậm Đà</h3>
+                                <p>đậm đà, đắng, truyền thống</p>
+                                <ul class="button-favorite">
+                                    <button type="button" class="buy-button">MUA NGAY</button>
+                                    <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite5.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">195.00</p>
+                                <h3>REVO Honey</h3>
+                                <p>độ ngọt cao, hậu ngọt, chua họ</p>
+                                <ul class="button-favorite">
+                                    <button type="button" class="buy-button">MUA NGAY</button>
+                                    <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="splide__slide_background">
+                                <img src="assets/images/favorite6.png">
+                                <div class="favorite-text">
+                                <p class="favorite-price">169.00</p>
+                                <h3>REVO Natural</h3>
+                                <p>hậu ngọt, hương hoa, vị chua </p>
+                                <ul class="button-favorite">
+                                    <button type="button" class="buy-button">MUA NGAY</button>
+                                    <button type="button" class="details-button">CHI TIẾT</button>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+            </div>
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF"/>
+                        </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF"/>
+                        </svg>
+                </button>
+        </div>
+        </div>
              </div>
            
              </div>
@@ -146,6 +168,7 @@
                 </div>
             <div class="giftset">
                 <img src="assets/images/pr-0018-r.png" alt="Product Image">
+                <div class="giftset-background">
                 <div class="giftset-text">
                     <p class="price">285.000</p>
                     <h3>Giftset "Cà phê phin Việt Nam"</h3>
@@ -165,7 +188,8 @@
                         <button type="button" class="details-button">CHI TIẾT</button>
                     </div>
                 </div>
-                <div class=tabs">
+                </div>
+                <div class="tabs">
                     <div class="tab"><button type="button">1</button></div>
                     <div class="tab"><button type="button">2</button></div>
                     <div class="tab"><button type="button">3</button></div>
@@ -173,12 +197,16 @@
             </div>
         </section>        
         <section class="combo-section">
+            <div class="background-right"> </div>
             <div class="combo-title">
             <p>Your Personalized Co</p>
                 <h1>COMBO PHIN PHÊ</h1>
                 </div>
-                <ul class="combo-card">
-                    <li>
+                <div class="combo-slider splide two" role="group">
+                    <div class="splide__track">
+                    <ul class="combo-card splide__list">
+                    <li class="splide__slide"> 
+                        <div>
                         <img src="assets/images/combo1.png">
                         <div class="combo-text">
                         <div class="price-combo"><p>147.00</p><p>155.00</p></div>
@@ -189,8 +217,10 @@
                             <button type="button" class="details-button">CHI TIẾT</button>
                         </ul>
                         </div>
+                        </div>
                     </li>
-                    <li>
+                    <li class="splide__slide">
+                        <div>
                         <img src="assets/images/combo2.png">
                         <div class="combo-text">
                         <div class="price-combo"> 
@@ -203,8 +233,10 @@
                             <button type="button" class="details-button">CHI TIẾT</button>
                         </ul>
                         </div>
+                        </div>
                     </li>
-                    <li>
+                    <li class="splide__slide">
+                        <div>
                         <img src="assets/images/combo3.png">
                         <div class="combo-text">
                         <div class="price-combo"><p>275.00</p><p>290.00</p></div>
@@ -215,8 +247,10 @@
                             <button type="button" class="details-button">CHI TIẾT</button>
                         </ul>
                         </div>
+                        </div>
                     </li>
-                    <li>
+                    <li class="splide__slide">
+                        <div>
                         <img src="assets/images/combo4.png">
                          <div class="combo-text">
                         <div class="price-combo"> <p>249.00</p><p>275.00</p></div>
@@ -227,10 +261,28 @@
                             <button type="button" class="details-button">CHI TIẾT</button>
                         </ul>
                         </div>
+                        </div>
                     </li>
                 </ul>
+                </div>
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF"/>
+                            </svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF"/>
+                            </svg>
+                    </button>
+                        </div>
+            </div>
+            
         </section>
     </main>
-    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
 </body>
 </html>

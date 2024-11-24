@@ -1,31 +1,38 @@
 @use "variables" as *;
 
 .favorite-slider {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    grid-gap: 30px;
+
     min-width: 0;
-
-    li {
-        display: flex;               
-        align-items: center;          
-        width: 560px;
-        height: 256px;
-        border: 1px solid #ccc;      
+    margin: 0 auto;
+    .splide__arrow--next{
+        right:-4%;
     }
-
+    .splide__arrow--prev{
+        left:-6%
+    }
+    li {
+        display: flex;
+        flex-direction: column;    
+        gap:30px;
+ 
+    }
     img {
         max-width: 235px;
         max-height: 256px;
-        margin-right: 20px; 
-        background-color: #EDF0F5;         
+        background-color: #EDF0F5; 
+        display: block;   
+        margin:0;     
     }
-
+.splide__slide_background{
+    background-color: #ffffff;
+    margin-right: 30px;
+}
     .favorite-text {
-        display: flex;
+        padding: 42px 42px;
+        text-align: left;
         flex-direction: column;  
-        width: 240px;   
-        margin-left: 20px;
+        max-height: 256px;
+        max-width: 325px;   
         .favorite-price{
             font-family: $font-family-secondary;
             font-weight: 600;
@@ -83,28 +90,15 @@
         font-family: $font-family-title;
     }
 }
-.favorite-section {
-    display: flex; /* Flexbox для разделения фона и контента */
-}
-
-.wrapper {
-    display: grid; /* Grid layout для упрощения структуры */
-    grid-template-columns: 400px 1fr; /* Левая колонка — синий фон, правая — контент */
-    width: 100%;
-    
-}
-
-.background-left {
-    background-color: $primary-color; /* Синий цвет */
-    height: 1031px; /* Высота 100% окна браузера */
-}
 .content {
     padding: 40px;
-    background-color: #ffffff; /* Белый фон */
+    background-color: #ffffff; 
 }
 
-.slider-container .swiper-button-prev::after,
-.slider-container .swiper-button-next::after{
-    color: #ccc;
-    font-size: 80px;
+.background-left{
+    width: 450px;
+    height: 891px;
+    background-color: $primary-color;
+    position: absolute;
+    left: 150px;
 }

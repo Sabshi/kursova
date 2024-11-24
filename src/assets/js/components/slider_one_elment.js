@@ -1,7 +1,7 @@
-var splide = new Splide( '.splide', {
-    width: '1150px',
-    height: 574,
-    perPage: 2,
+var splide = new Splide( '.two', {
+    width: '1170px',
+    height: 564,
+    perPage: 3,
     focus  : 0,
     omitEnd: true,
     pagination: false,

@@ -1,7 +1,8 @@
 @use "variables" as *;
     .giftset-title{
         text-align: center;
-        color:$primary-color;
+        color:$primary-color;   
+        padding-top: 86px;
     p{
         font-size: 20px;
         font-weight: 600;
@@ -10,25 +11,25 @@
         margin-bottom: 9px;
     }      
     h1{
-        font-size: 30px;
+        font-size: 1.563vw;
         font-weight: 900;
         line-height: 34px;
         font-family: $font-family-title;
     }
 }
 .gift-section{
-    position: relative; /* Для позиционирования псевдоэлемента */
-    padding: 120px 0 ;
+    position: relative; 
+    margin-top: 100px  ;
 }
 .gift-section::before{
-    content: ''; /* Обязательное свойство для отображения псевдоэлемента */
+    content: ''; 
     position: absolute;
     left: 0;
     top: 0;
-    width: 1076px; 
-    height: 800px; 
+    width: 1200px; 
+    height: 750px; 
     z-index: -1; 
-    background-color: $light-color;
+    background-color: #edf0f5;
 }
 .giftset {
     display: flex;
@@ -58,21 +59,34 @@
         line-height: 22px;
         color:$primary-color;
     }
+    .price{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
 }
 .giftset img {
-    width: 300px;
+    width: 463px;
+    height: 416px;
     height: auto;
     z-index: 1; 
+    position: absolute;
+    left: 200px;
+    top:280px;
 }
-
-.giftset-text {
-    width: 800px;
+.giftset-background{
+    display: flex;
+    width: 850px;
     height: 460px;
     background-color: #fff;
-    padding-left: 40px;
+    justify-content: flex-end;
+}
+.giftset-text {
+    width: 440px;
+    margin: auto 68px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
 }
 
 .price {
@@ -84,8 +98,9 @@
 
 .description {
     font-size: 16px;
-    color: #555;
     margin-bottom: 24px;
+    font-weight: 300;
+    line-height: 22px;
 }
 
 .giftset-info {

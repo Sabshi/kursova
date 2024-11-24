@@ -1,0 +1,15 @@
+.favorite-slider .splide__slide {
+    display:flex;
+    flex-direction: column;
+    div {
+        display:flex;
+        height:256px;
+    }
+    .splide__list {
+        gap: 30px;
+    }
+}
+
+.splide__arrow:disabled {
+    opacity: 0;
+}
