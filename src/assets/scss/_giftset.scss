@@ -1,21 +1,8 @@
 @use "variables" as *;
     .giftset-title{
-        text-align: center;
-        color:$primary-color;   
-        padding-top: 86px;
-    p{
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24px;
-        font-family: $font-family-secondary;
-        margin-bottom: 9px;
-    }      
-    h1{
-        font-size: 1.563vw;
-        font-weight: 900;
-        line-height: 34px;
-        font-family: $font-family-title;
-    }
+        text-align: center;  
+        padding-top: 86px;   
+    
 }
 .gift-section{
     position: relative; 
@@ -27,7 +14,7 @@
     left: 0;
     top: 0;
     width: 1200px; 
-    height: 750px; 
+    height: 795px; 
     z-index: -1; 
     background-color: #edf0f5;
 }
@@ -86,7 +73,6 @@
     margin: auto 68px;
     display: flex;
     flex-direction: column;
-
 }
 
 .price {
@@ -113,6 +99,14 @@
         font-weight: 300;
         line-height: 22px;
     }
+    .coffee-type,.coffee-height{
+        align-items: center;
+        display: flex;
+    }
+    .coffee-text{
+        margin-left: 12px;
+    }
+   
 }
 .buttons {
     display: flex;
@@ -131,7 +125,6 @@
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-  
 }
 
 .details-button {
@@ -140,23 +133,40 @@
     cursor: pointer;
     font-size: 14px;
 }
-
-.tabs {
+.tab{
+    display: none;
+}
+.tab.is-active{
+    display: block;
+}
+.tabs__nav{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $light-color;
 }
-.tab{
+.tabs__nav-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     color: $primary-color;
     transition: background-color 0.3s;
-        button{
-            width: 88px;
+    width: 88px;
             height: 154px;
             border: none;
+            cursor: pointer;
+    h2{
+        opacity: 0.3;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    font-family: $font-family-title;
+    }
 }
+.tabs__nav-item.is-active{
+    background-color: $tabs-button;
+    border: 1px solid $border;
+    h2{
+        opacity: 1;
+    }
 }
