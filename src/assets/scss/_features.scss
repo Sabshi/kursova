@@ -5,14 +5,14 @@
     align-items: center;       
     width: 100%;
     height: auto;
-    margin-top: 87px;
-    margin-bottom: 125px;
+    margin-top: 4.531vw;
+    margin-bottom: 6.51vw;
 }
 .feauters-svg{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 41px;
+    margin-bottom:41px;
 }
 .title-text {
     text-align: center;
@@ -20,7 +20,9 @@
 }
 
 .feauters-bloks {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
     justify-content: center;    
     padding: 0;
     text-align: center;

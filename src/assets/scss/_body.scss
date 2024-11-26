@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 ul{
     list-style: none;
@@ -9,10 +10,7 @@ ul{
 }
 .container{
     width:1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
-
 }
 p{
     margin: 0;
@@ -25,13 +23,13 @@ h1{
 .title{
     color: $primary-color;  
     h1{
-        font-size: 1.563vw;
+        font-size: 30px;
         font-weight: 900;
         line-height: 34px;
         font-family: $font-family-title;
     }
     p{
-        font-size: 20px;
+        font-size:20px;
         font-weight: 600;
         line-height: 24px;
         font-family: $font-family-secondary;

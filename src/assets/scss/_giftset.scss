@@ -21,20 +21,20 @@
 .giftset {
     display: flex;
     align-items: center;
-    width: 1000px;
+    width:1000px;
     height: 460px;
     border-radius: 8px;
     margin: 66px auto;
     p{
         font-size: 20px;
         font-weight: 300;
-        line-height: 16px;
+        line-height: 1.2;
         font-family: $font-family-secondary;
     }      
     h3{
         font-size: 24px;
         font-weight: 700;
-        line-height: 28px;
+        line-height: 1.5;
         font-family: $font-family-secondary;
         margin-top: 0;
         margin-bottom: 12px;
@@ -43,13 +43,13 @@
         font-family: $font-family-secondary;
         font-weight: 600;
         font-size: 16px;
-        line-height: 22px;
+        line-height: 1.2;
         color:$primary-color;
     }
     .price{
         font-size: 20px;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 1.2;
     }
 }
 .giftset img {
@@ -58,8 +58,8 @@
     height: auto;
     z-index: 1; 
     position: absolute;
-    left: 200px;
-    top:280px;
+    left: 10.5%;
+    top:40%;
 }
 .giftset-background{
     display: flex;
@@ -83,21 +83,18 @@
 }
 
 .description {
-    font-size: 16px;
     margin-bottom: 24px;
-    font-weight: 300;
-    line-height: 22px;
 }
 
 .giftset-info {
     display: flex;
-    gap: 30px;
+    gap: 1.563vw;
     margin-bottom: 20px;
     p{
         font-family: $font-family-secondary;
         font-size: 16px;
         font-weight: 300;
-        line-height: 22px;
+        line-height: 1.2;
     }
     .coffee-type,.coffee-height{
         align-items: center;
@@ -150,7 +147,7 @@
     justify-content: center;
     align-items: center;
     color: $primary-color;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
     width: 88px;
             height: 154px;
             border: none;
