@@ -1,0 +1,107 @@
+@use "variables" as *;
+
+.combo-section {
+    padding-top: 50px;
+    min-width: 0;
+    margin: 0 auto;
+.combo-title{
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 88px;
+}
+.combo-slider{
+    min-width: 0;
+    margin: 0 auto;
+
+    .splide__arrow--next{
+        right:-4%;
+    }
+    .splide__arrow--prev{
+        left:-6%
+    }
+.combo-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    img{
+        background-color: $light-color;
+           margin: 0;
+      display: block;
+    }
+    .combo-text{
+        padding: 20px;
+            background-color: #fff;
+        height: 220px;
+        width: 320px;
+        flex-direction: column;
+        h2{
+            font-family: $font-family-secondary;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $text-color;
+        }
+        p{
+            font-family: $font-family-secondary;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+        li{
+            display: flex;         
+            flex-direction: column; 
+            justify-content: space-between;  
+            width: 360px;  
+            img{
+                width: 360px;
+            }
+        }
+        .price-combo{
+            display: flex; 
+            p{
+                margin-right: 15px;
+                font-family: $font-family-secondary;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color:$accent-color;
+            }
+            p:last-child{
+                margin-right: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color:$primary-color;
+                text-decoration: line-through;
+            }
+        }
+}
+.button-combo{
+    margin-top: 20px;
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    button{
+        margin-right: 54px;
+    }
+    button:last-child{
+        margin-right:0 ;
+    }
+    .buy-button{
+        width: 134px;
+    }
+}
+
+
+}
+}
+
+.background-right{
+    width: 450px;
+    height: 882px;
+    background-color: $primary-color;
+    position: absolute;
+    right: 100px;
+    z-index: -1;
+}

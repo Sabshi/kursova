@@ -11,12 +11,12 @@ import sass from "sass";
 import cssnano from "gulp-cssnano"; 
 import uglify from "gulp-uglify" ;
 import plumber from "gulp-plumber";
-import panini from "panini";
 import imagemin from "gulp-imagemin";
 import del from "del";
 import browserSync, { stream } from 'browser-sync';
 import rigger from "gulp-rigger";
 import notify from "gulp-notify";
+import gifsicle from 'imagemin-gifsicle';
 
 
 const sassCompiler = gulpSass(sass); 
@@ -107,6 +107,7 @@ function clean(){
 
 function fonts(){
     return src (path.src.fonts,{base: srcPath+ "assets/fonts/" })
+    .pipe(dest(path.build.fonts))
     .pipe(browserSync.reload({stream: true}));
 }
 
